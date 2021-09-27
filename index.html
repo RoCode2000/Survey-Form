@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Survey Form</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid">
+      <div class="row text-center m-2">
+        <h1 id="title">Coding Technology Popularity Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to participate in our survey
+        </p>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6 border border-2 rounded p-2 m-2">
+          <form id="survey-form">
+            <div class="m-4">
+              <label id="name-label" for="name" class="form-label">Name</label>
+              <input
+                type="name"
+                class="form-control"
+                id="name"
+                required
+                placeholder="John Mayer"
+              />
+            </div>
+            <div class="m-4">
+              <label for="email" id="email-label" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                required
+                placeholder="John_Mayer@snailmail.com"
+              />
+            </div>
+            <div class="m-4">
+              <label for="number" id="number-label" class="form-label"
+                >Age</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="number"
+                required
+                placeholder="22"
+                min="0"
+                max="150"
+              />
+            </div>
+            <div class="m-4 text-center">
+              <label id="dropdown-label" for="dropdown"
+                >Type of Developer:
+              </label>
+              <select
+                name="developer"
+                id="dropdown"
+                class="text-start btn btn-secondary"
+              >
+                <option value="studying">Currently Studying</option>
+                <option value="full-stack-developer">
+                  Full-Stack Developer
+                </option>
+                <option value="front-end-developer">Front-End Developer</option>
+                <option value="back-end-developer">Back-End Developer</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center">
+              Do You Enjoy Coding?
+              <div class="form-check mx-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  checked
+                  value="Yes"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check mx-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  value="No"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  No
+                </label>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center my-3">
+              <div class="language">
+                Which of these tech-stacks are you familiar with?
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="MEAN"
+                  id="flexCheckDefault"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  MEAN
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="LAMP"
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  LAMP
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="MERN"
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  MERN
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Ruby-On-Rails"
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Ruby-On-Rails
+                </label>
+              </div>
+            </div>
+            <div class="form-floating m-4">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2"
+                >Feel free to include any technology that is not
+                mentioned</label
+              >
+            </div>
+            <div class="m-4 row">
+              <button type="submit" id="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
